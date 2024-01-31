@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+  
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css"
+      integrity="sha384-GLhlTQ8iSi1E3f7eaF1UqjKGxNNlZSYYgDPn5FZB9l3PyqffFJwC38d8Em+H8eDQ"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<style>
+body{
+    font-family: 'Montserrat', sans-serif ;
+}
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animated-box {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .box-left {
+            animation-name: slideInFromLeft;
+        }
+
+        .box-right {
+            animation-name: slideInFromRight;
+        }
+        .count-box {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .insight-box {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .insight-box img {
+            width: 100%;
+            height: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .insight-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .insight-box:hover .search-icon {
+            opacity: 1;
+        }
+
+        .read-more-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .insight-box:hover .read-more-btn {
+            display: block;
+        }
+                  /* Animation for sliding up */
+                  @keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideInFromBottom 4s ease-out;
+}
+
+
+        .contact-section {
+            background-color: #E02D56;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+     
+        .footer-section {
+            padding: 30px 20px;
+        }
+
+        .footer-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-contact-details {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact-details li {
+            margin-bottom: 10px;
+        }
+
+        .footer-social-icons {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .footer-social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer-copyright {
+            margin-top: 20px;
+            text-align: center;
+        }
+</style>
+<body>
+    <div style="background:  rgba(255, 255, 255, 0.7);font-family: 'Montserrat', sans-serif; backdrop-filter: blur(10px)" class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header">
+          <img src="https://i.ibb.co/HtV8yJ0/renda-1.png" alt="" width="140px">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div style="list-style: none;" class="offcanvas-body p-4">
+          
+             <li class="nav-item"><a style="color: black;" class="nav-link active" href="index.html">Home</a></li>
+             <br>
+             <li class="nav-item"><a style="color: black;" class="nav-link" href="about.html">About</a></li>
+             <br>
+             <li class="nav-item"><a style="color: black;" class="nav-link" href="contact.html">Contact Us</a></li>
+             <br>
+             <li class="nav-item"><a style="color: black;" class="nav-link" href="services.html" >Our Services</a></li>
+             <br>
+             <li class="nav-item"><a style="color: black;" class="nav-link" href="insights.html">Our Insights</a></li>
+             
+             <br>
+             <div class="d-sm-flex ">
+                <a style="font-size: 30px;color: #F35525;" class=" p-1" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a style="font-size: 30px;color: #F35525;margin-left: 30px;" class=" p-1" href=""><i class="fa-brands fa-facebook"></i></a>
+                <a style="font-size: 30px;color: #F35525;margin-left: 30px;" class=" p-1" href=""><i class="fa-brands fa-youtube"></i></a>
+             </div>
+        
+        </div>
+      </div>
+      <div class="container-fluid mt-1">
+        <a href="index.html"><img src="https://i.ibb.co/HtV8yJ0/renda-1.png" alt="" width="130px"></a>
+        <button style="background-color: grey;float: right;" class="btn btn-dark  mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          <i class="fa-solid fa-bars "></i>
+        </button>
+      </div>
+<div style="background-color: black;color: white;" class="container-fluid ">
+    <br>
+    <br>
+    <h2 style="margin-left: 30px;" class="mb-4">About Us</h2>
+
+    <div class="row">
+        <!-- Box 1 -->
+        <div class="col-md-4 mb-4 container animated-box box-left">
+            <img src="https://i.ibb.co/8PjNx4j/office1.jpg" class="img-fluid mb-3" alt="Image 1">
+            <div>
+                <h5>Our Mission</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="col-md-4 mb-4 container animated-box box-right">
+            <div>
+                <h5>Our Story</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <img src="https://i.ibb.co/cJLjJHP/story.png" class="img-fluid mt-3" alt="responsive img">
+        </div>
+
+    
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- Business Year -->
+        <div class="col-md-3 count-box">
+            <h2><span id="businessYears">0</span>+</h2>
+            <p>Business Year</p>
+        </div>
+
+        <!-- Satisfied Clients -->
+        <div class="col-md-3 count-box">
+            <h2><span id="satisfiedClients">0</span>+</h2>
+            <p>Satisfied Clients</p>
+        </div>
+
+        <!-- Projects Delivery -->
+        <div class="col-md-3 count-box">
+            <h2><span id="projectsDelivery">2000</span>+</h2>
+            <p>Projects Delivery</p>
+        </div>
+
+        <!-- Team Members -->
+        <div class="col-md-3 count-box">
+            <h2><span id="teamMembers">0</span>+</h2>
+            <p>Team Members</p>
+        </div>
+    </div>
+</div>
+<script>
+    // Function to count from 0 to a specified value
+    function countTo(elementId, targetValue) {
+        let currentCount = 0;
+        const countElement = document.getElementById(elementId);
+
+        function updateCount() {
+            countElement.textContent = currentCount;
+            currentCount++;
+            if (currentCount <= targetValue) {
+                requestAnimationFrame(updateCount);
+            }
+        }
+
+        updateCount();
+    }
+
+    // Set target values for counting
+    const businessYearsTarget = 35;
+    const satisfiedClientsTarget = 240;
+    
+    const teamMembersTarget = 130;
+
+    // Start counting
+    countTo('businessYears', businessYearsTarget);
+    countTo('satisfiedClients', satisfiedClientsTarget);
+    
+    countTo('teamMembers', teamMembersTarget);
+</script>
+
+<div style="background-color: black;color: white;" class="container-fluid ">
+<br>
+<br>
+<div class="row">
+    <!-- Insight Box 1 -->
+    <div class="col-md-4">
+        <span class="">JANUARY 1,2024</span>
+        <div class="insight-box slide-up">
+            <a href=""><img src="https://i.ibb.co/hyrNBj6/seo-stats.jpg" alt="Insight 1"></a>
+            <span class="search-icon">🔍</span>
+            
+        </div>
+        <p style="font-size: 30px;" class="">32 Statistics of SEO You Should Know</p>
+        <p class="">SEO Stats for Local Businesses Search engines utilize powerful algorithms to deliver content that meets the needs of the searcher. With these powerful algorithms comes a lot of uncertainty from digital marketers and business owners alike. SEO, or search engine optimization, is all about adjusting content and code on your website and optimizing local and off-site elements like Google My Business to try to perform better in search. According to Hubspot, about 64% of digital marketers invest time in SEO. The following stats will give you insight into the influence of SEO and how your digital marketing efforts can impact your business: Organic Search...</p>
+        <div class="">
+                <a style="color: red;" href="#" class="">Read More...</a>
+            </div>
+            <br>
+    </div>
+    
+    <!-- Insight Box 2 -->
+    <div class="col-md-4">
+            <span class="">JANUARY 1,2024</span>
+        <div class="insight-box slide-up">
+          <a href=""><img src="https://i.ibb.co/31NQLRr/Valuable-Money.jpg" alt="Insight 2" ></a>
+            <span class="search-icon">🔍</span>
+            
+        </div>
+        <p style="font-size: 30px;" class="">Making More Profits!?</p>
+        <p  class="">Are you interested in making more profit? Do you want to outsmart your competition? Do want to be a step ahead? Are you finding it difficult to spread your online presence? How can this happen? Than Teem Techy Marketer as a digital marketing agency is here to solve all your problems and has the answers to your questions Teem Techy Marketer takes you to the height of popularity your business never saw before. Give you bigger and better sales. Do you think you are generating a good amount of profit? Think again! Cause with Teem Techy Marketer you can generate ten times more profit than you already...</p>
+        <div class="">
+                <a style="color: red;" href="#" class="">Read More...</a>
+            </div>
+            <br>
+    </div>
+    
+    <!-- Insight Box 3 -->
+    <div class="col-md-4">
+        <span class="">JANUARY 1,2024</span>
+        <div class="insight-box slide-up">
+        
+            <a href=""><img src="https://i.ibb.co/C0yfgs5/Digital-Marketing-Agency.jpg" alt="Insight 3"></a>
+            <span class="search-icon">🔍</span>
+          
+        </div>
+        <p class="">7 Reasons for Hiring a Digital Agency</p>
+        <p class="">Is it difficult for you to handle digital marketing for your brand? Do you tired of developing a good social media team?  Do you want to grow more than market? If yes, this blog is for you. Reaching more people is a difficulty, targeting your audience sounds like a catastrophe and following the trends feel like an impossibility. Than you have enough reasons to out-source digital marketing. It comes with a cost which you will be happy to fill. And benefits, you will lose breath when you count the list. Out-source digital gives you many reasons to choose it, here are a...</p>
+          <div class="">
+                <a style="color: red;" href="#" class="">Read More...</a>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+</div>
+<section class="contact-section">
+<div class=" d-sm-flex container">
+    <div  class="container">
+        <p style="font-size: 20px;">Let’s Get in Touch</p>
+        <p style="font-size: 40px;">We’re interested in talking about your business.</p>
+    </div>
+    <div class="container">
+        <a href="#" class="btn btn-outline-light ">Contact Us  <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    
+</div>
+</section>
+
+<!--footer section-->
+<section style="background-color: #333; 
+color: #fff; " class="footer-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="footer-title">Join for Company Updates</div>
+            <form>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your E-mail Address">
+                </div>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="footer-title">Contact Details</div>
+            <ul class="footer-contact-details">
+                <li>Uk</li>
+                <li>+44730043 9063</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="footer-title">Our Services</div>
+            <ul class="footer-social-icons">
+                <li><a style="color: white;" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a style="color: white;" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a style="color: white;" href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a style="color: white;" href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a style="color: white;" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a style="color: white;" href="#"><i class="fa fa-linkedin"></i></a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="footer-copyright">
+Teem Techy Marketer. © 2021. All Rights Reserved<br>
+Designed & Developed By: RK TechMerch
+</div>
+</body>
+</html>
